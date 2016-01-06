@@ -4,7 +4,10 @@
   "description": "Maps socket errors to SocketError objects subclassing httperrors.",
   "main": "lib/dnsErrors.js",
   "scripts": {
-    "test": "mocha"
+    "lint": "jshint .",
+    "test": "mocha && npm run lint",
+    "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true)",
+    "coverage": "NODE_ENV=development istanbul cover _mocha -- --reporter dot && echo google-chrome coverage/lcov-report/index.html"
   },
   "license": "BSD-3-Clause",
   "dependencies": {
@@ -13,6 +16,9 @@
     "lodash": "3.10.1"
   },
   "devDependencies": {
+    "coveralls": "2.11.6",
+    "istanbul": "0.4.1",
+    "jshint": "2.8.0",
     "mocha": "2.3.4",
     "unexpected": "10.5.0"
   }

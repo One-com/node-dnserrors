@@ -3,6 +3,8 @@ node-dnserrors
 
 [![NPM version](https://badge.fury.io/js/dnserrors.svg)](http://badge.fury.io/js/dnserrors)
 [![Build Status](https://travis-ci.org/One-com/node-dnserrors.svg?branch=master)](https://travis-ci.org/One-com/node-dnserrors)
+[![Coverage Status](https://coveralls.io/repos/One-com/node-dnserrors/badge.svg)](https://coveralls.io/r/One-com/node-dnserrors)
+[![Dependency Status](https://david-dm.org/One-com/node-dnserrors.svg)](https://david-dm.org/One-com/dnserrors)
 
 Exposes a function mapping DNS errors to DnsError objects.
 
