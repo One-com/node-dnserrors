@@ -1,0 +1,19 @@
+{
+  "name": "dnserrors",
+  "version": "1.0.0",
+  "description": "Maps socket errors to SocketError objects subclassing httperrors.",
+  "main": "lib/dnsErrors.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "createerror": "1.0.0",
+    "httperrors": "1.2.0",
+    "lodash": "3.10.1"
+  },
+  "devDependencies": {
+    "mocha": "2.3.4",
+    "unexpected": "10.5.0"
+  }
+}
