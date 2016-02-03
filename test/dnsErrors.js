@@ -6,6 +6,14 @@ var dnsErrorCodesMap = require('../lib/dnsErrorCodesMap');
 var dnsErrors = require('../lib/dnsErrors');
 
 describe('dnsErrors', function () {
+    it('works as a constructor', function () {
+        var DnsError = dnsErrors;
+        expect(new DnsError('ENOTFOUND'), 'to be a', DnsError);
+    });
+
+    it('works without new', function () {
+        expect(dnsErrors('ENOTFOUND'), 'to be a', dnsErrors);
+    });
 
     it('will create a properly subclassed instance', function (done) {
         // capture a genuine NOTFOUND error
