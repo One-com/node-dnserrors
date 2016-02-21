@@ -105,6 +105,10 @@ describe('DnsError', function () {
         expect(new DnsError.ENOENT(), 'to be a', DnsError);
     });
 
+    it('should create an instance via DnsError(errorCode)', function () {
+        expect(dnsErrorConstructorInLowerCase('ENOENT'), 'to be a', DnsError.ENOENT);
+    });
+
     describe('#supports', function () {
         it('should return true for a mapped DNS error code', function () {
             expect(DnsError.supports('ENOENT'), 'to be true');
