@@ -40,14 +40,11 @@ describe('DnsError', function () {
         });
     });
 
-    it('will return unknown error if it was not mapped', function () {
+    it('will return a generic DnsError if it was not mapped', function () {
         var err = new Error();
         var dnsError = new DnsError(err);
 
-        expect(dnsError, 'to equal', new DnsError.NotDnsError());
-
-        // has named errorCode property
-        expect(dnsError.NotDnsError, 'to be true');
+        expect(dnsError, 'to equal', new DnsError());
     });
 
     it('will not alter the original error', function () {
