@@ -107,4 +107,26 @@ describe('DnsError', function () {
     it('has the DnsError superclass constructor as the main export', function () {
         expect(new DnsError.ENOENT(), 'to be a', DnsError);
     });
+
+    describe('#supports', function () {
+        it('should return true for a mapped DNS error code', function () {
+            expect(DnsError.supports('ENOENT'), 'to be true');
+        });
+
+        it('should return false for an unmapped DNS error code', function () {
+            expect(DnsError.supports('FOOBAR'), 'to be false');
+        });
+
+        it('should return true for a unmapped DNS error instance', function () {
+            var fakeDnsError = new Error('ENOENT');
+            fakeDnsError.code = 'ENOENT';
+            expect(DnsError.supports(fakeDnsError), 'to be true');
+        });
+
+        it('should return false for a unmapped DNS error instance', function () {
+            var fakeDnsError = new Error('FOOBAR');
+            fakeDnsError.code = 'FOOBAR';
+            expect(DnsError.supports(fakeDnsError), 'to be false');
+        });
+    });
 });
