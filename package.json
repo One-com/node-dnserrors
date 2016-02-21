@@ -2,7 +2,7 @@
   "name": "dnserrors",
   "version": "1.0.0",
   "description": "Maps socket errors to SocketError objects subclassing httperrors.",
-  "main": "lib/dnsErrors.js",
+  "main": "lib/DnsError.js",
   "scripts": {
     "lint": "jshint .",
     "test": "mocha && npm run lint",
@@ -11,7 +11,7 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
-    "createerror": "1.0.0",
+    "createerror": "1.1.0",
     "httperrors": "1.2.0",
     "lodash": "3.10.1"
   },
