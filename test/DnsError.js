@@ -130,4 +130,12 @@ describe('DnsError', function () {
             expect(DnsError.supports(fakeDnsError), 'to be false');
         });
     });
+
+    it('should produce instances that have a falsy http property, despite being inherited from HttpError', function () {
+        expect(new DnsError.ENOENT().http, 'to be falsy');
+    });
+
+    it('should produce instances that have a falsy HttpError property, despite being inherited from HttpError', function () {
+        expect(new DnsError.ENOENT().HttpError, 'to be falsy');
+    });
 });
