@@ -12,10 +12,10 @@
   "repository": "git://github.com/One-com/node-dnserrors",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "createerror": "1.2.0",
-    "httperrors": "2.2.0",
-    "lodash.defaults": "4.2.0",
-    "lodash.omit": "4.5.0"
+    "createerror": "^1.2.0",
+    "httperrors": "^2.2.0",
+    "lodash.defaults": "^4.2.0",
+    "lodash.omit": "^4.5.0"
   },
   "devDependencies": {
     "coveralls": "2.11.6",
