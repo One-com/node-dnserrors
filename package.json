@@ -14,7 +14,8 @@
   "dependencies": {
     "createerror": "1.2.0",
     "httperrors": "2.2.0",
-    "lodash": "3.10.1"
+    "lodash.defaults": "4.2.0",
+    "lodash.omit": "4.5.0"
   },
   "devDependencies": {
     "coveralls": "2.11.6",
