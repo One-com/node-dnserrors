@@ -1,7 +1,7 @@
 {
   "name": "dnserrors",
   "version": "2.1.0",
-  "description": "Maps socket errors to SocketError objects subclassing httperrors.",
+  "description": "Maps dns errors to SocketError objects subclassing httperrors.",
   "main": "lib/DnsError.js",
   "scripts": {
     "lint": "jshint .",
