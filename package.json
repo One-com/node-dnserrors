@@ -1,7 +1,7 @@
 {
   "name": "dnserrors",
   "version": "2.0.2",
-  "description": "Maps socket errors to SocketError objects subclassing httperrors.",
+  "description": "Maps dns errors to DnsError objects subclassing httperrors.",
   "main": "lib/DnsError.js",
   "scripts": {
     "lint": "jshint .",
@@ -9,6 +9,7 @@
     "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true)",
     "coverage": "NODE_ENV=development istanbul cover _mocha -- --reporter dot && echo google-chrome coverage/lcov-report/index.html"
   },
+  "repository": "git://github.com/One-com/node-dnserrors",
   "license": "BSD-3-Clause",
   "dependencies": {
     "createerror": "1.1.0",
