@@ -12,8 +12,8 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "createerror": "1.1.0",
-    "httperrors": "1.2.0",
-    "lodash": "3.10.1"
+    "httperrors": "2.0.1",
+    "lodash": "4.17.4"
   },
   "devDependencies": {
     "coveralls": "2.11.6",
